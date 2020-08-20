@@ -25,6 +25,366 @@
   
   <link rel="stylesheet" type="text/css" href="mystyle.css">
   
+  <style>
+    
+      body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background: url("https://i.ibb.co/f8wPcnG/background.jpg") no-repeat right/cover white;
+    color: #fff;
+    padding: 200px 25px;
+    font-family: Montserrat, sans-serif;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  }
+  .container-fluid {
+    padding: 60px 50px;
+
+
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+    
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;   
+
+    height: 200px !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .headphone1 {
+
+  }
+  .headphone2 {
+       background: url("https://i.ibb.co/JCbkDYJ/Extra-bass-headphones.jpg") no-repeat left/cover white;
+  }
+  .headphone3 {
+       background: url("https://i.ibb.co/JCbkDYJ/Extra-bass-headphones.jpg") no-repeat left/cover white;
+  }
+  .headphone4 {
+       background: url("https://i.ibb.co/JCbkDYJ/Extra-bass-headphones.jpg") no-repeat left/cover white;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: gray !important;
+    
+    
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  
+  .myheader_content {
+     color: gray;
+     text-align: left;
+     margin-left: 20px;
+  }
+  
+  .normal {
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    border: 2px solid lightgray;
+  }
+  
+  .btn:hover {
+      color: white;
+      background-color: black;
+  }
+
+  
+
+  .myitemshead {
+    background-color: transparent;
+    width: 60%;
+    text-align: left;
+  }
+  .myitemshead h1 {
+    margin-bottom: 50px;
+  }
+
+  .btn.active {
+    background-color: #a8d02f;
+  }
+  .btn.active:hover {
+    background-color: black;
+    color: white;
+
+
+  }
+  .myheader {
+    background: url("https://i.ibb.co/f8wPcnG/background.jpg") no-repeat right/cover white; 
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+  }  
+   /* here */
+  .third_row {
+clip-path: polygon(56% 9%, 100% 1%, 100% 74%, 0 92%, 0% 75%, 0 19%);
+
+
+
+      height: 1000px;
+      background-image: url('https://i.ibb.co/j5BmnV6/mobile-app.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;    
+      }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+        * {
+   box-sizing: border-box;
+    }
+    .zoom {
+      transition: transform .3s !important;
+    }
+
+    .zoom:hover {
+      -ms-transform: scale(.5) !important; /* IE 9 */
+      -webkit-transform: scale(.5) !important;/* Safari 3-8 */
+      transform: scale(.5) !important;
+   }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+    #myspansm {
+      color: gold !important;
+    
+
+    }
+    * {
+   box-sizing: border-box;
+    }
+    .zoom {
+      transition: transform .2s !important;
+    }
+
+    .zoom:hover {
+      -ms-transform: scale(.5) !important; /* IE 9 */
+      -webkit-transform: scale(.5) !important;/* Safari 3-8 */
+      transform: scale(.5) !important;
+   }
+  }
+  .jumbotron #calculator_h1 {
+    color: black !important;
+    
+  } 
+  
+  svg {
+  display: block;
+  width: 100%;
+  height: 90px;
+  background: white;
+}
+
+.thrid_row_header {
+  font-size: 18px;
+  
+}
+.third_container {
+  
+}
+.mylogo {
+  background: url("https://i.ibb.co/99sGD44/Logo.png") no-repeat right/cover white;
+  width: 100px;
+}
+
+.cart_count {
+  position: relative;
+  background-color: #b9dd2c;
+  top: -15px;
+  right: 6px;  
+  padding: 0 6px 4px;
+  border-radius: 2%;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  
+
+}
+
+.features {
+
+  background-color: #a8d02f;
+  
+  display: block;  
+  clip-path: circle(29.5% at 50% 50%);
+  padding-top: 75px;
+  height: 200px;
+}
+
+.color_gold {
+  color: gold;
+}
+
+
+#contact {
+   background-color:lightgray;
+}
+
+/* zoom style */
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+  </style>
+  
 
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
