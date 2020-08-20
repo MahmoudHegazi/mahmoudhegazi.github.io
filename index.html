@@ -1,516 +1,336 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Landing Page</title>
-        
-        <link rel="stylesheet" href="css/styles.css">
-        
-        
-        <script src="https://kit.fontawesome.com/5a2ebfc58a.js" crossorigin="anonymous"></script>
-		<style>
-		body{
-    margin: 0;
-    padding: 0;
-    background-color: #1b1b1b;
-    font-family: 'ZCOOL XiaoWei', serif;
-}
+<html lang="en">
+<head>
+  
+  <title>May Front End Geeks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-h1{
-    margin: 0;
-    color: #32CD32;
-}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  
+  
+  
+  <!-- my css style -->
+  
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  
 
-p{
-    color: #C0C0C0;
-}
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand mylogo" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#services">Features</a></li>
+        <li><a href="#portfolio">Reviews</a></li>        
+        <li><a href="#pricing">Shop</a></li>
+        <li><a href="#contact">Blog</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"><span class="cart_count"><span style="margin-left:3px;" id="cart_index">o</span></span></i> </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-#main-container{
-    transition: 0.5s;
-    background-color: #1b1b1b;
-    margin-left: 2%;
-}
+<div class="jumbotron text-center" id="about" >
 
+<div class="myitemshead" style="margin-left:20px;">
+  <h1 id="calculator_h1" class="myheader_content" style="color:black;text-shadow: 2px 2px 4px #000000;">Feel <br>Powerfull<br>Experience</h1> 
+  <p class="myheader_content">We specialize in blablabla</p> 
+    <button type="button" class="btn  btn-default btn-lg active" style="margin-left:23px;color:white;">CHECK IT OUT</button>
+  
+  <button type="button" class="btn btn-default btn-lg" style="margin-left: 23px;">Buy</button>
 
-.grey-container{
-    background-color: #191919;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-/* Side navigation bar */
-
-
-.nav-bar{
-    height: 100%;
-    position: fixed;
-    background-color: #303434;
-    color: #32CD32;
-    font-size: 30px;
-    line-height: 65px;
-    z-index: 1;
-    width: 1.5em;
-    transition: 0.5s;
-}
-
-.anchor{
-    transition: 0.3s;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    padding-right: 3px;
-}
-
-i {
-    pointer-events:none;
-}
-
-.active-section{
-    transition: 0.3s;
-    border: 2px solid lime;
-}
-
-ul{
-    padding: 0;
-    list-style-type: none;
-}
-
-ul li{
-    display: block;
-}
-
-ul li:hover{
-    transition: 0.3s;
-    border-bottom: 2px solid lime;
-    cursor: context-menu;
-}
-
-.active-anchor{
-    background-color: #2fba37;
-    color: black;
-}
-
-ul li:active{
-    background-color: #2fba37;
-    color: black;
-}
-
-.navbar-open, .navbar-close{
-    cursor: context-menu;
-    color: lime;
-    font-size: 35px;
-    margin-left: 5px;
-}
+  </div>
+  
+  
+  
+</div>
 
 
-/* home page */
-
-#home{
-    background-image: url("images/home-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-}
-
-.home-text{
-    font-size: 25px;
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-}
-
-
-/* content */
-
-#card-container{
-    width: 1000px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card{
-    background-color: #2f3a32;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    height: 480px;
-    width: 300px;
-    margin: 30px 5px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-.card button{
-    background-color: #26972b;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-weight: 900;
-    margin-top: 50px;
-
-}
-
-.card img{
-    width: 100%;
-    height: 35%;
-}
-
-
-/* about us */
-
-#about-us{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 30px 0;
-    background-color: #2f3a32;
-    height: 385px;
-}
-
-#about-content{
-    flex: 1.1 1 0;
-    margin: 60px;
-}
-
-#about-img{
-    flex: 1 1 0;
-    margin-right: 30px;
-}
-
-#about-img img{
-    width: 100%;
-    height: 100%;
-}
-
-#about-us button{
-    background-color: #26972b;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-weight: 900;
-}
-
-/* contact us */
-
-#contact-container{
-    background-color: #2f3a32;
-    height: 580px;
-    width: 85%;
-    border-radius: 5px;
-}
-
-.contact-text{
-    text-align: center;
-    margin: 40px;
-}
-
-form{
-    margin: 10px 10%;
-    position: relative;
-}
-
-label{
-    color: white;
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-input[type='text'],input[type='email'], textarea{
-    width: 100%; 
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-input[type='text'], input[type='email']{
-    height: 30px;
-}
-
-textarea{
-    height: 200px;
-}
-
-input[type='submit']{
-    margin-top: 20px;
-    background-color: #26972b;
-    color: white;
-    border: none;
-    text-align: center;
-    font-size: 20px;
-}
-
-
-
- /* footer */
-footer{
-    text-align: center;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-@media only screen and (max-width: 600px){
-    #about-us{
-        height: auto;
-        flex-direction: column-reverse;
-        text-align: center;
-        justify-content: center;
-    }
+<!-- Container (Features Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2 style="text-shadow: 2px 2px 4px #000000;">Features and Spesifications</h2>
+  <h4>Features</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-3 icon_cont zoom">
+      <span class="glyphicon glyphicon glyphicon-headphones logo-small features" style="color:#fff;"></span>
+      <h4>Extra Bass</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-3 icon_cont zoom">
+      <span class="glyphicon glyphicon-cloud-download logo-small features" style="color:#fff;"></span>
+      <h4>Noise isolating</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-3 icon_cont zoom">
+      <span class="glyphicon glyphicon-wrench logo-small features" style="color:#fff;">
+      
+      
+      </span>
+      <h4>Bluetooth</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
     
-    #about-img{
-        width: 100%;
-    }
+        <div class="col-sm-3 icon_cont zoom">
+
+      <span class="glyphicon glyphicon glyphicon-send
+ logo-small features" style="color:#fff;"></span>
+      <h4>Longer Battery</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
     
-    .nav-bar, .navbar-open{
-        font-size: 20px;
-    } 
-    
-    #about-us img{
-        height: 150px;
-        width: 80%;
-        margin-top: 20px;
-    }
-}
+  </div>
+  </div>
+  
+  
+ 
+  <div class="third_container" id="portfolio"> 
+
+<div class="bg-grey third_row">
+<!-- it was easit way fel angaz -->
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <div style="margin-left:5%;">
+  <h2 style="text-shadow: 2px 2px 4px #000000;">Exlclusive offers using our app</h2>
+  <span id="myspansm" style="color:darkgray;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> 
+  </span>
+     <br />
+  <a href="https://www.apple.com/ios/app-store/" title="will take you to google store" style="cursor:pointer;">
+    <img src="https://i.ibb.co/SPpNFkF/play-store-green.png" width="120" alt="green google icon">
+  </a>
+  <a href="https://play.google.com/store" title="will take you to Apple  store" style="cursor:pointer;">
+    <img src="https://i.ibb.co/xzV2TtM/app-store-green.png" width="120" alt="green app store icon">
+  </a>
+  <br><br>
+</div>
+</div>
+
+</div>
+<!-- end of features -->
 
 
-@media only screen and (max-width: 320px){
-    .nav-bar, .navbar-open, .navbar-close{
-        font-size: 10px;
-    } 
-    .navbar-open, .navbar-close{
-        margin-left: 2px;
-    }
-}
-		</style>
-    </head>
-    
-    <body>
-        <!-- NAVBAR -->
-        <div id="nav-bar" class="nav-bar">
-            <span id="navbar-button" class="navbar-open"><i class="fas fa-bars"></i></span>
-                <ul id="navbar-anchor">
-                    <li class="anchor active-anchor"><i class='fas fa-home'></i></li>
-                    <li class="anchor"><i class='fas fa-box-open'></i></li>
-                    <li class="anchor"><i class='fas fa-info-circle'></i></li>
-                    <li class="anchor"><i class='fas fa-phone-square-alt'></i></li>
-                </ul>
+
+
+
+
+
+
+
+
+
+<div id="portfolio" class="container-fluid text-center">
+
+
+<!-- Container (Pricing Section) !!!!! -->
+<div id="pricing"   class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>We Have Awesome Headphones take a look</h4>
+  </div>
+  <div class="row slideanim">
+  
+  <!-- start of card 1 -->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading headphone1">
+        <img src="https://i.ibb.co/JCbkDYJ/Extra-bass-headphones.jpg" width="100%" height="100%" onclick="onClick(this)"
+             style="cursor:pointer;">
         </div>
+        <div class="panel-body">
         
-        <div id="main-container">
-                    <!-- home -->
-            <section id="home">
-                <div class="home-text">
-                    <h1>Home Page</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </section>
+           <span>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star-half-alt color_gold"></i>
+           </span>
+           <br>
+           <span>
+               <span>Limited Edition</span>
+               <br>
+               <span style="color:black;font-size:1.2em;">headphones</span>
+               
+           </span>
 
-
-            <section id="content" class="grey-container">
-                <div id="card-container">
-                    <div class="card">
-                        <img src="css/images/laptop.jpg">
-                        <h1>Best Laptops</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div>
-                            <button>SHOW LAPTOPS</button>
-                        </div>
-                        
-                    </div>
-                    <div class="card">
-                        <img src="css/images/phone.jpg">
-                        <h1>Best Smartphones</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <button>SHOW SMARTPHONES</button>
-                    </div>
-                    <div class="card">
-                        <img src="css/images/tv.png">
-                        <h1>Best Smart TV</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
-                        <button>SHOW TVS</button>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="about-us">
-                <div id="about-content">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     
-                    <button>LEARN MORE!</button>
-                </div>
-                
-                <div id="about-img">
-                    <img src="css/images/About-us.jpg">
-                </div>
-                
-            </section>
-                
-            <section id="contact-us" class="grey-container">
-                <div id="contact-container">
-                    
-                    <div class="contact-text">
-                    <h1>Contact Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    
-                    <form>
-                        <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" placeholder="Your name.." />
-                
-                        <label for="email">Email address*</label>
-                        <input type="email" id="email" name="email" placeholder="Your email.." />
-                        
-                        <label for="message">Message*</label>
-                        <textarea id="message" name="message" placeholder="Your message.."></textarea>
-                        
-                        <div style="text-align: center;">
-                            <input type="submit" value="Submit">
-                        </div>
-                        
-                    </form>
-                </div>
-            </section>
-            
-            <footer>
-                <div>
-                    <p>Creator: Marwan Samih<br>
-                    <p>marwansamih@gmail.com</p>
-                    <p>Copyright &copy; 2020 MarShallOwn</p>
-                </div>
-            </footer>
-            
+        </div>  
+        <div class="panel-footer">
+          <h3 style="color:black;">$275.00</h3>
+          <button class="btn btn-lg">Details</button>
+          <button class="btn btn-lg" style="background-color:#a8d02f;" onclick="addcart()">add to cart</button>
         </div>
-        
-        <script>
-		
-		const navbar = document.getElementById('nav-bar');
-const navbarButton = document.getElementById('navbar-button');
-const mainContainer = document.getElementById('main-container');
-const sections = document.getElementsByTagName('section');
-const navbarAnchor = document.getElementById('navbar-anchor');
-let previousActiveAnchor = 0;
-
-const icons = ["<i class='fas fa-home'></i>", "<i class='fas fa-box-open'></i>", "<i class='fas fa-info-circle'></i>", "<i class='fas fa-phone-square-alt'></i>"];
-
-const words = ["Home", "Products", "About us", "Contact us"];
-
-/**
-* @description Activates the current viewed section
-* @param {number} index : the index of the section from the section htmlcollection
-*/
-const activateSection = index =>{
+      </div>      
+    </div>
     
-    if(previousActiveAnchor !== index){
-        
-        navbarAnchor.children[previousActiveAnchor].classList.remove('active-anchor');
-        sections[previousActiveAnchor].classList.remove('active-section');
-
-        navbarAnchor.children[index].classList.add('active-anchor');
-        sections[index].classList.add('active-section');
-
-        previousActiveAnchor = index;
-        
-    }
+    <!-- end of card 1 -->
     
-};
-
-/**
-* @description Function to close the navigation bar section and changes the navigation icon
-*/
-const closeNavbar = () => {
-    
-        navbar.style.width = "1.5em";
-        mainContainer.style.marginLeft = "2.5%";
+         <!-- start of card 2 -->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading headphone1">
+        <img src="https://i.ibb.co/c2SBhJv/Sounds-as-powerful.jpg" width="100%" height="100%" onclick="onClick(this)" 
+             style="cursor:pointer;">
+        </div>
+        <div class="panel-body">
         
-        for(let i=0; i < navbarAnchor.children.length; i++){
-            navbarAnchor.children[i].innerHTML = icons[i];
-        }
-        
-        navbarButton.innerHTML = "<i class='fas fa-bars'></i>";
-        navbarButton.classList.remove('navbar-close');
-        navbarButton.classList.add('navbar-open');
-    
-};
+           <span>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           </span>
+           <br>
+           <span>
+               <span>Limited Edition</span>
+               <br>
+               <span style="color:black;font-size:1.2em;">headphones</span>
+               
+           </span>
 
-
-/**
-* @description Onclick the navigation button it either closes or open the navigation bar
-*/
-navbarButton.addEventListener('click', () => {
-    
-    if(navbarButton.classList.contains('navbar-open')){
-        
-        navbar.style.width = "5em";
-
-        setTimeout(() => {
-            for(let i=0; i < navbarAnchor.children.length; i++){
-                setTimeout(() => {
                     
-                })
-                navbarAnchor.children[i].innerHTML = words[i];
-            }
-        }, 600);
+        </div>  
+        <div class="panel-footer">
+          <h3 style="color:black;">$800.00</h3>
+          <button class="btn btn-lg">Details</button>
+          <button class="btn btn-lg" style="background-color:#a8d02f;" onclick="addcart()">add to cart</button>
+        </div>
+      </div>      
+    </div>
+    
+    <!-- end of card 2 -->
+    
+    
+  <!-- start of card 3 -->
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading headphone1">
+        <img src="https://i.ibb.co/VqwKGfG/White-edition-headphones.jpg" width="100%" height="100%" onclick="onClick(this)" 
+             style="cursor:pointer;">
+        </div>
+        <div class="panel-body ">
         
-        mainContainer.style.marginLeft = "8%";
-        navbarButton.innerHTML = "<i class='fas fa-times'></i>";
-        navbarButton.classList.remove('navbar-open');
-        navbarButton.classList.add('navbar-close');
-        
-    }
-    else{
-        
-        closeNavbar();
-        
-    }
-    
-});
+           <span>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star color_gold"></i>
+           <i class="fas fa-star-half-alt color_gold"></i>
+           </span>
+           <br>
+           <span>
+               <span>Limited Edition</span>
+               <br>
+               <span style="color:black;font-size:1.2em;">headphones</span>
+               
+           </span>
 
+                    
+        </div>  
+        <div class="panel-footer">
+          <h3 style="color:black;">$325.00</h3>
+          <button class="btn btn-lg">Details</button>
+          <button class="btn btn-lg" style="background-color:#a8d02f;border:none;" onclick="addcart()">add to cart</button>
+        </div>
+      </div>      
+    </div>
+    
+    <!-- end of card 3 -->
+    
+   
+  </div>
+</div>
 
-/**
-* @description Onclick the any of the navigation button it will scroll to the specific section of the button
-* @param event
-*/
-navbarAnchor.addEventListener('click', (e) =>{
-    
-    const index = [...navbarAnchor.children].indexOf(e.target);
-    
-    sections[index].scrollIntoView({ behavior: 'smooth' ,block: 'center'});
-    
-    activateSection(index);
-    
-    if(navbarButton.classList.contains('navbar-close')){
-        closeNavbar();
-    }
-    
-});
-
-
-for(let i = 0; i< sections.length; i++){
-    
-    window.addEventListener('scroll', () => {
-        
-        if(sections[i].getBoundingClientRect().top + (window.innerHeight / 2) < window.innerHeight){
-            activateSection(i);
-        }
-        
-    });
-    
-}
+  <!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<!-- end of model --!>
 
 
 
-		</script>
-    </body>
+  <!-- Wrapper for slides -->
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Mohamed Salah, football player</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>Mr abdelfatah shahin
+, moderator, 1MAC</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Adel Imam, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+    
+    
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!-- end -->
+
+
+
+
+<footer class="container-fluid text-center" id="contact">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed By: <a href="mailto:mahmod.hagzy@gmail.com?Subject=My%20Subject&body=You%20are%20Awesome%20how%20could%20you%20build%20this%20:D" target="_top" title="Send Mail to me">Mahmoud Hegazi</a></p>
+</footer>
+
+<script>
+
+</script>
+
+<script src="myscript.js"></script>
+
+</body>
 </html>
